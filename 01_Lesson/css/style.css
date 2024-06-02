@@ -1,13 +1,29 @@
-.box{
-    /* Türkçe açıklamalarını yaz. */
-    width: 40%; /* Genişliği ekranın %40'ı kadar olacak */
-    height: 200px; /* Yüksekliği 200px olacak */
-    background-color: red; /* Arkaplan rengi kırmızı olacak */
-    margin: 10px; /* Kenar boşluğu 10px olacak */
-    float: left; /* Sağa yaslanacak */
-    border: 1px solid black; /* Kenarları 1px kalınlığında siyah çerçeve olacak */
-    text-align: center; /* İçerideki yazıları ortalar */
-    border-radius:  10px; /* Kenarları yuvarlak yap */
-    shape-margin: 0% 50% 0% 50%; /* Şekil kenar boşluğu */
-    
+body {
+    font-family: Arial, sans-serif;
+    /* Yazı tipi Arial olacak */
+    background-color: #C3BAB0;
+    /* Arkaplan rengi açık gri olacak */
+
+}
+
+.box {
+    width: 40%;
+    /* Genişliği ekranın %40'ı kadar olacak */
+    height: 200px;
+    /* Yüksekliği 200px olacak */
+    background-color: #0193BD;
+    /* Arkaplan rengi kırmızı olacak */
+    margin: 10px;
+    /* Kenar boşluğu 10px olacak */
+    float: left;
+    /* Sağa yaslanacak */
+    border: 1px solid black;
+    /* Kenarları 1px kalınlığında siyah çerçeve olacak */
+    text-align: center;
+    /* İçerideki yazıları ortalar */
+    border-radius: 10px;
+    /* Kenarları yuvarlak yap */
+    shape-margin: 0% 50% 0% 50%;
+    /* Şekil kenar boşluğu */
+
 }

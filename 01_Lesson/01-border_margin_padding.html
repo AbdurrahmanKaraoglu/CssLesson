@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border, Margin, Padding</title>
+
+    <style>
+        .border {
+            border-style: dashed;
+            /* kenarlık stilini belirler */
+            border-color: blue;
+            /* kenarlık rengini belirler */
+            border-width: 5px 10px 15px 20px;
+            /* kenarlık kalınlığını belirler */
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+        }
+
+        .margin {
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+        }
+
+        .padding {
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+        }
+
+        .bmp {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+
+            border-width: 10px 20px 30px 40px;
+            /* kenarlık kalınlığını belirler */
+            border-top: 10px solid rgb(87, 235, 227);
+            /* üst kenarlık kalınlığını ve rengini belirler */
+            border-right: 20px solid rgb(235, 87, 198);
+            /* sağ kenarlık kalınlığını ve rengini belirler */
+            border-bottom: 30px solid rgb(219, 106, 31);
+            /* alt kenarlık kalınlığını ve rengini belirler */
+            border-left: 40px solid rgb(31, 219, 106);
+            /* sol kenarlık kalınlığını ve rengini belirler */
+            border-radius: 50px;
+            /* kenarlık köşelerini yuvarlar */
+
+            border-color: red rgb(128, 109, 0) blue yellow;
+            /* kenarlık rengini belirler */
+        }
+
+        .bmp2 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-top-left-radius: 30px;
+            /* üst sol köşeyi yuvarlar */
+        }
+
+        .bmp3 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-top-right-radius: 30px;
+            /* üst sağ köşeyi yuvarlar */
+        }
+
+        .bmp4 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-bottom-right-radius: 30px;
+            /* alt sağ köşeyi yuvarlar */
+        }
+
+        .bmp5 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-bottom-left-radius: 30px;
+            /* alt sol köşeyi yuvarlar */
+        }
+
+        .bmp6 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-top-right-radius: 30px;
+            /* üst sağ köşeyi yuvarlar */
+            border-bottom-left-radius: 30px;
+            /* alt sol köşeyi yuvarlar */
+        }
+
+        .bmp7 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-top-left-radius: 30px;
+            /* üst sol köşeyi yuvarlar */
+            border-bottom-right-radius: 30px;
+            /* alt sağ köşeyi yuvarlar */
+        }
+
+        .bmp8 {
+            border: 5px solid red;
+            /* kenarlık kalınlığını, stilini ve rengini belirler */
+            margin: 50px;
+            /* dış boşluğu 50px yapar */
+            padding: 50px;
+            /* iç boşluğu 50px yapar */
+            border-top-left-radius: 30px;
+            /* üst sol köşeyi yuvarlar */
+            border-top-right-radius: 30px;
+            /* üst sağ köşeyi yuvarlar */
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <P>Border, Margin, Padding nedir?</P>
+    <p>Border : Kenarlık</p>
+    <p>Margin : Dış boşluk</p>
+    <p>Padding : İç boşluk</p>
+    <div class="border">Border</div>
+    <br>
+    <div class="margin">Margin</div>
+    <br>
+    <div class="padding">Padding</div>
+    <br>
+
+    <div class="bmp">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp2">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp3">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp4">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp5">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp6">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp7">Border, Margin, Padding</div>
+    <br>
+
+    <div class="bmp8">Border, Margin, Padding</div>
+    <br>
+
+</body>
+
+</html>
