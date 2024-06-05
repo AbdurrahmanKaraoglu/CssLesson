@@ -1,0 +1,72 @@
+* {
+    /* Türkçe açıklamalarınıda ekle */
+    margin: 0;
+    /* Margin değerlerini sıfırlıyoruz */
+    padding: 0;
+    /* Padding değerlerini sıfırlıyoruz */
+    box-sizing: border-box;
+    /* Box modelini border-box olarak ayarlıyoruz */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Sayfa içerisindeki yazıların fontunu Arial ve sans-serif olarak belirliyoruz */
+    background-color: #f1f1f1;
+    /* Sayfa arka plan rengini #f1f1f1 olarak belirliyoruz */
+    
+    display: flex;
+    /* Sayfa içerisindeki elemanların yan yana gelmesini sağlıyoruz */
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: #f7f1f1;
+}
+
+.btn {
+    display: inline-block;
+    /* Butonun yan yana gelmesini sağlıyoruz */
+    background-color: #333;
+    /* Butonun arka plan rengini #333 olarak belirliyoruz */
+    color: #fff;
+    /* Butonun yazı rengini beyaz olarak belirliyoruz */
+    text-decoration: none;
+    /* Butonun altını çizgiyi kaldırıyoruz */
+    border-radius: 5px;
+    /* Butonun kenarlarını yuvarlıyoruz */
+    transition: background-color 0.3s;
+    /* Butonun arka plan renginin değişim süresini 0.3 saniye olarak belirliyoruz */
+    outline: none;
+    /* Butonun kenarlarını kaldırıyoruz */
+    /* padding: 10px 20px; */
+    /* Butonun içerisindeki yazı ile buton arasındaki boşluğu 10px üst ve alt, 20px sağ ve sol olarak belirliyoruz */
+
+    font-size: 1em;
+    /* Butonun yazı boyutunu 1em olarak belirliyoruz */
+    padding: .5em 1em;
+    /* Butonun içerisindeki yazı ile buton arasındaki boşluğu .5em üst ve alt, 1em sağ ve sol olarak belirliyoruz */
+
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #918d94;
+    /* Butonun üzerine gelindiğinde arka plan rengini #555 olarak belirliyoruz */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    /* Butonun arka plan rengini #007bff olarak belirliyoruz */
+    border-color: #205792;
+    /* Butonun kenar rengini #007bff olarak belirliyoruz */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #15750c;
+    /* Butonun üzerine gelindiğinde arka plan rengini #0056b3 olarak belirliyoruz */
+
+    box-shadow: 0 0 0 0.2rem #007bff80;
+}
