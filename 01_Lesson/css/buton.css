@@ -14,7 +14,7 @@ body {
     background-color: #f1f1f1;
     /* Sayfa arka plan rengini #f1f1f1 olarak belirliyoruz */
     
-    display: flex;
+    display: contents;
     /* Sayfa içerisindeki elemanların yan yana gelmesini sağlıyoruz */
 
     justify-content: center;
@@ -69,4 +69,132 @@ body {
     /* Butonun üzerine gelindiğinde arka plan rengini #0056b3 olarak belirliyoruz */
 
     box-shadow: 0 0 0 0.2rem #007bff80;
+}
+
+.btn-accent {
+    background-color: #c4fd3e;
+    /* Butonun arka plan rengini #6c757d olarak belirliyoruz */
+    border-color: #3d6804;
+    /* Butonun kenar rengini #343a40 olarak belirliyoruz */
+    color: #000;
+    /* Butonun yazı rengini beyaz olarak belirliyoruz */
+    box-shadow: 0 0 0 0.2rem #0b2a7e;
+    
+}
+
+.btn-accent:hover, .btn-accent:focus {
+    background-color: #fd3e77;
+    /* Butonun üzerine gelindiğinde arka plan rengini #0056b3 olarak belirliyoruz */
+    box-shadow: 0 0 0 0.2rem #0b2a7e;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* Butonun arka plan rengini #dc3545 olarak belirliyoruz */
+    border-color: #dc3545;
+    /* Butonun kenar rengini #dc3545 olarak belirliyoruz */
+}
+
+.btn-danger:hover, .btn-danger:focus {
+    background-color: #c82333;
+    /* Butonun üzerine gelindiğinde arka plan rengini #c82333 olarak belirliyoruz */
+}
+
+.btn-large {
+    font-size: 1.5em;
+    /* Butonun yazı boyutunu 1.5em olarak belirliyoruz */
+    padding: 1em 2em;
+    /* Butonun içerisindeki yazı ile buton arasındaki boşluğu 1em üst ve alt, 2em sağ ve sol olarak belirliyoruz */
+}
+
+.btn-small {
+    font-size: 0.8em;
+    /* Butonun yazı boyutunu 0.8em olarak belirliyoruz */
+    padding: 0.5em 1em;
+    /* Butonun içerisindeki yazı ile buton arasındaki boşluğu 0.5em üst ve alt, 1em sağ ve sol olarak belirliyoruz */
+}
+
+.btn-success {
+    background-color: #28a745;
+    /* Butonun arka plan rengini #28a745 olarak belirliyoruz */
+    border-color: #28a745;
+    /* Butonun kenar rengini #28a745 olarak belirliyoruz */
+}
+
+.btn-success:hover, .btn-success:focus {
+    background-color: #218838;
+    /* Butonun üzerine gelindiğinde arka plan rengini #218838 olarak belirliyoruz */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    /* Butonun arka plan rengini #ffc107 olarak belirliyoruz */
+    border-color: #ffc107;
+    /* Butonun kenar rengini #ffc107 olarak belirliyoruz */
+}
+
+.btn-warning:hover, .btn-warning:focus {
+    background-color: #e0a800;
+    /* Butonun üzerine gelindiğinde arka plan rengini #e0a800 olarak belirliyoruz */
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    /* Butonun arka plan rengini #17a2b8 olarak belirliyoruz */
+    border-color: #17a2b8;
+    /* Butonun kenar rengini #17a2b8 olarak belirliyoruz */
+}
+
+.btn-info:hover, .btn-info:focus {
+    background-color: #138496;
+    /* Butonun üzerine gelindiğinde arka plan rengini #138496 olarak belirliyoruz */
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    /* Butonun arka plan rengini #f8f9fa olarak belirliyoruz */
+    border-color: #f8f9fa;
+    /* Butonun kenar rengini #f8f9fa olarak belirliyoruz */
+}
+
+.btn-light:hover, .btn-light:focus {
+    background-color: #e2e6ea;
+    /* Butonun üzerine gelindiğinde arka plan rengini #e2e6ea olarak belirliyoruz */
+}
+
+.btn-dark {
+    background-color: #343a40;
+    /* Butonun arka plan rengini #343a40 olarak belirliyoruz */
+    border-color: #343a40;
+    /* Butonun kenar rengini #343a40 olarak belirliyoruz */
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    background-color: #23272b;
+    /* Butonun üzerine gelindiğinde arka plan rengini #23272b olarak belirliyoruz */
+}
+
+.btn-oval {
+    border-radius: 50px;
+    /* Butonun kenarlarını yuvarlıyoruz */
+
+    background-color: #2687e7;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    /* Butonun kenarlarını yuvarlıyoruz */
+    width: 50px;
+    /* Butonun genişliğini 50px olarak belirliyoruz */
+    height: 50px;
+    /* Butonun yüksekliğini 50px olarak belirliyoruz */
+    line-height: 50px;
+    /* Butonun içerisindeki yazıyı dikey ve yatay olarak ortalamak için kullanıyoruz */
+    text-align: center;
+    /* Butonun içerisindeki yazıyı yatay olarak ortalamak için kullanıyoruz */
+    font-size: 1em;
+    /* Butonun yazı boyutunu 1.5em olarak belirliyoruz */
+    padding: 0;
+    /* Butonun içerisindeki yazı ile buton arasındaki boşluğu sıfırlıyoruz */
+    
 }
