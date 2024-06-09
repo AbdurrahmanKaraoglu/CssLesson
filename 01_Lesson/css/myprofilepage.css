@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    /* Varsayılan margin değerini sıfırladık */
+    padding: 0;
+    /* Varsayılan padding değerini sıfırladık */
+    background-color: #4CB7E3;
+    /* Sayfa arkaplan rengini belirledik */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Sayfa yazı tipini belirledik */
+    line-height: 1.6;
+    /* Satır yüksekliğini belirledik */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    /* Header arkaplan rengini belirledik */
+    color: #fff;
+    /* Header yazı rengini belirledik */
+    padding: 1.5rem;
+    /* Header içeriklerinin iç boşluklarını belirledik */
+}
+
+.header h1 {
+    text-align: center;
+    /* Header içeriklerinin hizasını belirledik */
+    font-size: 2.5rem;
+    /* Header h1 etiketinin yazı boyutunu belirledik */
+}
+
+.section {
+    margin: 20px;
+    /* Section içeriklerinin dış boşluklarını belirledik */
+    margin: 0;
+    /* Section içeriklerinin dış boşluklarını sıfırladık */
+    padding: 1rem 2rem;
+}
+
+/* About Me */
+.about-me {
+    background-color: #f4f4f4;
+    /* About Me arkaplan rengini belirledik */
+    padding: 20px;
+    /* About Me içeriklerinin iç boşluklarını belirledik */
+    max-width: 1200px;
+    /* About Me içeriklerinin maksimum genişliğini belirledik */
+
+    /* Merkezde hizalamak için aşağıdaki kodları ekleyin */
+    margin: 20px auto;
+    /* About Me içeriklerinin dış boşluklarını sıfırladık */
+}
+
+/*My Skills */
+.my-skills {
+    background-color: #ee6c4d;
+    /* My Skills arkaplan rengini belirledik */
+    padding: 20px;
+    /* My Skills içeriklerinin iç boşluklarını belirledik */
+    font-size: 1.2rem;
+    /* My Skills içeriklerinin yazı boyutunu belirledik */
+    max-width: 1200px;
+    /* My Skills içeriklerinin maksimum genişliğini belirledik */
+
+    /* Merkezde hizalamak için aşağıdaki kodları ekleyin */
+    margin: 20px auto;
+    /* About Me içeriklerinin dış boşluklarını sıfırladık */
+}
+
+.my-skills ul {
+    list-style: none;
+    /* My Projects içeriklerinin madde işaretlerini kaldırdık */
+    margin: 0;
+    /* My Projects içeriklerinin dış boşluklarını sıfırladık */
+}
+
+.my-skills h2 {
+    color: #1d309e;
+    /* My Skills h2 etiketinin yazı rengini belirledik */
+    margin: 0;
+    /* My Skills h2 etiketinin dış boşluklarını sıfırladık */
+}
+
+
+/* My Projects */
+.my-projects {
+    background-color: #cfc9c9;
+    /* My Projects arkaplan rengini belirledik */
+    padding: 20px;
+    /* My Projects içeriklerinin iç boşluklarını belirledik */
+    list-style: none;
+    /* My Projects içeriklerinin madde işaretlerini kaldırdık */
+
+    max-width: 1200px;
+    /* My Skills içeriklerinin maksimum genişliğini belirledik */
+    
+    /* Merkezde hizalamak için aşağıdaki kodları ekleyin */
+    margin: 20px auto;
+    /* About Me içeriklerinin dış boşluklarını sıfırladık */
+}
+
+.my-projects h2 {
+    color: #1d309e;
+    /* My Projects h2 etiketinin yazı rengini belirledik */
+    margin: 0;
+    /* My Projects h2 etiketinin dış boşluklarını sıfırladık */
+}
+
+.projects-list {
+    display: flex;
+    /* My Projects içeriklerini yan yana hizaladık */
+    justify-content: space-between;
+    /* My Projects içeriklerini eşit aralıklarla hizaladık */
+    flex-wrap: wrap;
+    /* My Projects içeriklerini yan yana hizaladık */
+    margin: 0;
+    /* My Projects içeriklerinin dış boşluklarını sıfırladık */
+    padding: 0;
+    /* My Projects içeriklerinin iç boşluklarını sıfırladık */
+    list-style: none;
+    /* My Projects içeriklerinin madde işaretlerini kaldırdık */
+
+}
+
+.projects-list li {
+    flex: 1;
+    /* My Projects içeriklerini eşit genişlikte hizaladık */
+    margin: 10px;
+    /* My Projects içeriklerinin dış boşluklarını belirledik */
+    padding: 10px;
+    /* My Projects içeriklerinin iç boşluklarını belirledik */
+    background-color: #f4f4f4;
+    /* My Projects içeriklerinin arkaplan rengini belirledik */
+    border-radius: 5px;
+    /* My Projects içeriklerinin kenar yarıçapını belirledik */
+}
+
+.projects-list li h3 {
+    color: #1d309e;
+    /* My Projects h3 etiketinin yazı rengini belirledik */
+    margin: 0;
+    /* My Projects h3 etiketinin dış boşluklarını sıfırladık */
+}
+
+.projects-list li p {
+    margin: 0;
+    /* My Projects p etiketinin dış boşluklarını sıfırladık */
+}
+
+.projects-list li img {
+    width: 100px;
+    /* My Projects img etiketinin genişliğini belirledik */
+    height: 100px;
+    /* My Projects img etiketinin yüksekliğini belirledik */
+    object-fit: cover;
+    /* My Projects img etiketinin içeriğini kaplamasını sağladık */
+}
+
+
+
+
+/* Contact */
+.contact {
+    background-color: #f4f4f4;
+    /* Contact arkaplan rengini belirledik */
+    padding: 20px;
+    /* Contact içeriklerinin iç boşluklarını belirledik */
+    max-width: 1200px;
+    /* My Skills içeriklerinin maksimum genişliğini belirledik */
+    
+    /* Merkezde hizalamak için aşağıdaki kodları ekleyin */
+    margin: 20px auto;
+    /* About Me içeriklerinin dış boşluklarını sıfırladık */
+}
+
+.contact-form {
+    display: flex;
+    /* Contact form içeriklerini yan yana hizaladık */
+    flex-direction: column;
+    /* Contact form içeriklerini dikey hizaladık */
+    margin: 0;
+    /* Contact form içeriklerinin dış boşluklarını sıfırladık */
+    padding: 0;
+    /* Contact form içeriklerinin iç boşluklarını sıfırladık */
+}
+
+.contact h2 {
+    color: #1d309e;
+    /* Contact h2 etiketinin yazı rengini belirledik */
+    margin: 0;
+    /* Contact h2 etiketinin dış boşluklarını sıfırladık */
+}
+
+.contact-form {
+    margin: 1rem 0;
+    /* Contact form input ve textarea etiketlerinin dış boşluklarını belirledik */
+    width: 100%;
+    /* Contact form input ve textarea etiketlerinin genişliğini belirledik */
+    border-radius: 5px;
+    /* Contact form input ve textarea etiketlerinin kenar yarıçapını belirledik */
+
+}
+
+.input-name {
+    margin-bottom: 10px;
+    /* İsim input etiketinin alt boşluğunu belirledik */
+    border: 1px solid #333;
+    /* İsim input etiketinin kenarlarını belirledik */
+    outline: none;
+    /* İsim input etiketinin kenarlarını belirledik */
+    padding: .5em;
+    /* İsim input etiketinin iç boşluklarını belirledik */
+    font-size: 1rem;
+    /* İsim input etiketinin yazı boyutunu belirledik */
+    font-family: inherit;
+    /* İsim input etiketinin yazı tipini belirledik */
+    line-height: inherit;
+    /* İsim input etiketinin satır yüksekliğini belirledik */
+    width: 50%;
+    /* İsim input etiketinin genişliğini belirledik */
+    border-radius: 5px;
+    /* İsim input etiketinin kenar yarıçapını belirledik */
+}
+
+.input-name:focus {
+    border-color: #9e1d1d;
+    /* İsim input etiketinin kenar rengini belirledik */
+}
+
+.input-email {
+    margin-bottom: 10px;
+    /* İsim input etiketinin alt boşluğunu belirledik */
+    border: 1px solid #333;
+    /* İsim input etiketinin kenarlarını belirledik */
+    outline: none;
+    /* İsim input etiketinin kenarlarını belirledik */
+    padding: .5em;
+    /* İsim input etiketinin iç boşluklarını belirledik */
+    font-size: 1rem;
+    /* İsim input etiketinin yazı boyutunu belirledik */
+    font-family: inherit;
+    /* İsim input etiketinin yazı tipini belirledik */
+    line-height: inherit;
+    /* İsim input etiketinin satır yüksekliğini belirledik */
+
+    width: 50%;
+    /* İsim input etiketinin genişliğini belirledik */
+
+    border-radius: 5px;
+    /* İsim input etiketinin kenar yarıçapını belirledik */
+
+}
+
+.input-email:focus {
+    border-color: #9e1d1d;
+    /* İsim input etiketinin kenar rengini belirledik */
+}
+
+.input-message {
+    margin-bottom: 10px;
+    /* İsim input etiketinin alt boşluğunu belirledik */
+    border: 1px solid #333;
+    /* İsim input etiketinin kenarlarını belirledik */
+    outline: none;
+    /* İsim input etiketinin kenarlarını belirledik */
+    padding: .5em;
+    /* İsim input etiketinin iç boşluklarını belirledik */
+    font-size: 1rem;
+    /* İsim input etiketinin yazı boyutunu belirledik */
+    font-family: inherit;
+    /* İsim input etiketinin yazı tipini belirledik */
+    line-height: inherit;
+    /* İsim input etiketinin satır yüksekliğini belirledik */
+    resize: none;
+    /* İsim input etiketinin boyutunu belirledik */
+    width: 50%;
+
+    border-radius: 5px;
+    /* İsim input etiketinin kenar yarıçapını belirledik */
+}
+
+.input-message:focus {
+    border-color: #9e1d1d;
+    /* İsim input etiketinin kenar rengini belirledik */
+}
+
+.btn-send {
+    background-color: #1d309e;
+    /* Send butonunun arkaplan rengini belirledik */
+    color: #fff;
+    /* Send butonunun yazı rengini belirledik */
+    padding: 10px;
+    /* Send butonunun iç boşluklarını belirledik */
+    border: none;
+    /* Send butonunun kenarlarını belirledik */
+    border-radius: 5px;
+    /* Send butonunun kenar yarıçapını belirledik */
+    cursor: pointer;
+    /* Send butonunun imleci belirledik */
+    width: 30%;
+    /* Send butonunun genişliğini belirledik */
+    margin-top: 10px;
+    /* Send butonunun üst boşluğunu belirledik */
+
+
+}
+
+.btn-send:hover {
+    background-color: #188a0d;
+    /* Send butonunun arkaplan rengini belirledik */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    /* Footer arkaplan rengini belirledik */
+    color: #fff;
+    /* Footer yazı rengini belirledik */
+    padding: 1rem;
+    /* Footer içeriklerinin iç boşluklarını belirledik */
+    text-align: center;
+    /* Footer içeriklerinin hizasını belirledik */
+}
