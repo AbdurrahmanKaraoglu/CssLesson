@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Flow</title>
+
+    <style>
+        body {
+            /* Türkçe açıklamalarınıda yaz */
+            background-color: lightyellow;
+            /* Arka plan rengi lightyellow */
+            padding: 0;
+            /* Tüm kenarlar için 0 boşluk */
+            margin: 0;
+            /* Tüm kenarlar için 0 boşluk */
+        }
+
+        div {
+            background-color: lightblue;
+            /* Arka plan rengi lightblue */
+            border: 1px solid black;
+            /* Kenarlar 1px kalınlığında siyah çizgi */
+            padding: 10px;
+            /* İç boşluk 10px */
+            margin: 10px;
+            /* Dış boşluk 10px */
+
+            height: 200px;
+            /* Yükseklik 200px */
+            width: 400px;
+            /* Genişlik 200px */
+        }
+
+        .container {
+            background-color: lightcoral;
+            border: 1px solid black;
+            padding: 10px;
+            /* İç boşluk 10px */
+            margin: 20px;
+            /* Dış boşluk 20px */
+            width: 50%;
+            /* Genişlik %50 */
+            height:  auto;
+            /* Yükseklik otomatik */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Padding (İç Boşluk)</h2>
+        <div>"padding", bir öğenin içeriği ile kenarları (border) arasındaki boşluğu tanımlar. İçeriğin kenarlarından itibaren ne kadar boşluk olacağını belirler. Örneğin, bir düğmenin içindeki metnin
+            kenarlara ne kadar uzak olacağını belirlemek için padding kullanılır.</div>
+    </div>
+
+    <div class="container">
+        <h2>Margin (Dış Boşluk)</h2>
+        <div>"margin", bir öğenin dış kenarı ile başka öğeler veya konteyneri arasındaki boşluğu tanımlar. Öğeler arasındaki boşluğu ayarlamak için kullanılır.</div>
+    </div>
+
+    <div class="container">
+        <h2>Özet</h2>
+        <ul>
+            <li>
+                <p>padding: Bir öğenin içeriği ile kenarları arasındaki boşluğu ayarlar.</p>
+            </li>
+            <li>
+                <p>margin: Bir öğenin dış kenarı ile diğer öğeler veya konteyneri arasındaki boşluğu ayarlar.</p>
+            </li>
+            <p>Her iki özellik de aynı şekilde dört kenar için tek bir değer kullanarak veya her bir kenar için ayrı ayrı değerler belirterek kullanılabilir.</p>
+        </ul>
+    </div>
+
+</body>
+
+</html>

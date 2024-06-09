@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Özellikleri Örnekleri</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Display Özellikleri Örnekleri</h1>
+    
+    <section>
+        <h2>Inline</h2>
+        <p>Bir öğeyi satır içi (inline) öğesi yapar. inline öğeler, bir satırda yan yana dizilirler ve sadece içeriklerinin genişliği kadar yer kaplarlar. Kenar boşlukları (margin) ve iç boşlukları (padding) yalnızca yatay yönlerde çalışır. Örnek: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code></p>
+        <span class="inline-element">Bu bir inline (satır içi) öğedir.</span>
+        <span class="inline-element">Metin ile birlikte akar.</span>
+    </section>
+    
+    <section>
+        <h2>Block</h2>
+        <p>Bir öğeyi blok öğesi yapar. block öğeler, her zaman yeni bir satırda başlarlar ve tüm satırı kaplarlar. Genişlik ve yükseklik ayarları yapılabilir. Kenar boşlukları (margin) ve iç boşlukları (padding) her iki yönde de çalışır. Örnek: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code></p>
+        <div class="block-element">Bu bir block (blok) öğedir.</div>
+        <div class="block-element">Tam genişliği kaplar.</div>
+    </section>
+    
+    <section>
+        <h2>Inline-Block</h2>
+        <p>inline-block öğeler, inline öğeler gibi satır içi yerleştirilir, ancak block öğeler gibi genişlik ve yükseklik ayarları yapılabilir. Kenar boşlukları (margin) ve iç boşlukları (padding) hem yatay hem de dikey yönlerde çalışır. Örnek: <code>&lt;img&gt;</code>, <code>&lt;button&gt;</code></p>
+        <div class="inline-block-element">Bu bir inline-block öğedir.</div>
+        <div class="inline-block-element">Metin ile birlikte akar, ancak genişlik ve yükseklik alabilir.</div>
+    </section>
+    
+    <section>
+        <h2>Flex</h2>
+        <p>Bir öğeyi esnek konteyner (flex container) yapar ve içerdiği öğeleri esnek öğeler (flex items) olarak düzenler. Esnek düzen, öğelerin düzenlenmesini ve hizalanmasını kolaylaştırır.</p>
+        <div class="flex-container">
+            <div class="flex-item">Flex Öğesi 1</div>
+            <div class="flex-item">Flex Öğesi 2</div>
+            <div class="flex-item">Flex Öğesi 3</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Grid</h2>
+        <p>Bir öğeyi ızgara konteyner (grid container) yapar ve içerdiği öğeleri ızgara öğeleri (grid items) olarak düzenler. Izgara düzeni, iki boyutlu (satır ve sütun) yerleşim sağlar.</p>
+        <div class="grid-container">
+            <div class="grid-item">Grid Öğesi 1</div>
+            <div class="grid-item">Grid Öğesi 2</div>
+            <div class="grid-item">Grid Öğesi 3</div>
+            <div class="grid-item">Grid Öğesi 4</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>None</h2>
+        <p>Bir öğeyi gizler. Öğenin yerini bile almaz, tamamen sayfadan kaldırılmış gibi davranır. Görünmez olduğu için sayfa düzenine etki etmez.</p>
+        <div class="none-element">Bu öğe gizlenmiş ve görüntülenmemelidir.</div>
+    </section>
+</body>
+</html>

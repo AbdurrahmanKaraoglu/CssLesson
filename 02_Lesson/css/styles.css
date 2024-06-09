@@ -1,0 +1,77 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi Arial ve yedek sans-serif */
+    line-height: 1.6; /* Satır yüksekliği 1.6 kat */
+    margin: 20px; /* Tüm kenarlarda 20 piksel dış boşluk */
+}
+
+h1, h2 {
+    border-bottom: 2px solid #ccc; /* Alt kenarda 2 piksel kalınlığında gri çizgi */
+    padding-bottom: 10px; /* Alt iç boşluk 10 piksel */
+}
+
+section {
+    margin-bottom: 40px; /* Alt kenarda 40 piksel dış boşluk */
+}
+
+/* Inline Element */
+.inline-element {
+    display: inline; /* Öğeyi satır içi (inline) yapar */
+    background-color: #e0f7fa; /* Arka plan rengi açık mavi */
+    padding: 5px; /* Tüm kenarlarda 5 piksel iç boşluk */
+    margin: 5px; /* Tüm kenarlarda 5 piksel dış boşluk */
+}
+
+/* Block Element */
+.block-element {
+    display: block; /* Öğeyi blok öğesi yapar */
+    background-color: #ffe0b2; /* Arka plan rengi açık turuncu */
+    padding: 10px; /* Tüm kenarlarda 10 piksel iç boşluk */
+    margin: 10px 0; /* Üst ve alt kenarlarda 10 piksel dış boşluk */
+}
+
+/* Inline-Block Element */
+.inline-block-element {
+    display: inline-block; /* Öğeyi inline-block yapar */
+    background-color: #d1c4e9; /* Arka plan rengi açık mor */
+    padding: 10px; /* Tüm kenarlarda 10 piksel iç boşluk */
+    margin: 5px; /* Tüm kenarlarda 5 piksel dış boşluk */
+    width: 150px; /* Genişlik 150 piksel */
+    text-align: center; /* Metin ortalanmış */
+}
+
+/* Flex Container */
+.flex-container {
+    display: flex; /* Öğeyi esnek konteyner (flex container) yapar */
+    gap: 10px; /* Esnek öğeler arasında 10 piksel boşluk */
+    background-color: #c8e6c9; /* Arka plan rengi açık yeşil */
+    padding: 10px; /* Tüm kenarlarda 10 piksel iç boşluk */
+}
+
+.flex-item {
+    background-color: #81c784; /* Arka plan rengi yeşil */
+    padding: 20px; /* Tüm kenarlarda 20 piksel iç boşluk */
+    margin: 5px; /* Tüm kenarlarda 5 piksel dış boşluk */
+    flex: 1; /* Esnek öğenin genişlemesini sağlar */
+    text-align: center; /* Metin ortalanmış */
+}
+
+/* Grid Container */
+.grid-container {
+    display: grid; /* Öğeyi ızgara konteyner (grid container) yapar */
+    grid-template-columns: repeat(2, 1fr); /* Her satırda 2 sütun, her biri eşit genişlikte */
+    gap: 10px; /* Izgara öğeleri arasında 10 piksel boşluk */
+    background-color: #bbdefb; /* Arka plan rengi açık mavi */
+    padding: 10px; /* Tüm kenarlarda 10 piksel iç boşluk */
+}
+
+.grid-item {
+    background-color: #90caf9; /* Arka plan rengi mavi */
+    padding: 20px; /* Tüm kenarlarda 20 piksel iç boşluk */
+    text-align: center; /* Metin ortalanmış */
+}
+
+/* None Element */
+.none-element {
+    display: none; /* Öğeyi gizler, sayfa düzeninden tamamen kaldırır */
+}
