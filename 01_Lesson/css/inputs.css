@@ -1,0 +1,132 @@
+* {
+    /* Türkçe açıklamalarınıda ekle */
+    margin: 0.5em;
+    /* Margin değerlerini 0.5em olarak belirliyoruz */
+    padding: 0;
+    /* Padding değerlerini sıfırlıyoruz */
+    box-sizing: border-box;
+    /* Box modelini border-box olarak ayarlıyoruz */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Sayfa içerisindeki yazıların fontunu Arial ve sans-serif olarak belirliyoruz */
+    background-color: #b3adad;
+    /* Sayfa arka plan rengini #f1f1f1 olarak belirliyoruz */
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+ 
+}
+
+ 
+.input {
+    border: 1px solid #aaa;
+    /* Input alanının kenarlık rengini #aaa olarak belirliyoruz */
+    outline: none;
+    /* Input alanının kenarlık rengini sıfırlıyoruz */
+    font-size: inherit;
+    /* Input alanının yazı boyutunu kalıt olarak belirliyoruz */
+    padding: 0.5em;
+    /* Input alanının iç boşluklarını 0.5em olarak belirliyoruz */
+    border-radius: 0.25em;
+    /* Input alanının kenar yarıçapını 0.25em olarak belirliyoruz */
+    border-color: #0087E4;
+}
+
+.input:focus {
+    border-color: #0056b3;
+    /* Input alanı odaklandığında kenarlık rengini #0056b3 olarak belirliyoruz */
+    box-shadow: 0 0 5px #0056b3;
+}
+
+.input-success {
+    border-color: #00a000;
+    /* Input alanının başarılı olduğunda kenarlık rengini #00a000 olarak belirliyoruz */
+    box-shadow: 0 0 5px #00a000;
+}
+
+.input-success:focus {
+    border-color: #007300;
+    /* Input alanı başarılı olduğunda odaklandığında kenarlık rengini #007300 olarak belirliyoruz */
+    box-shadow: 0 0 5px #007300;
+}
+
+.input-error {
+    border-color: #ff0000;
+    /* Input alanının hatalı olduğunda kenarlık rengini #ff0000 olarak belirliyoruz */
+    box-shadow: 0 0 1px #ff0000;
+}
+
+.input-error:focus {
+    border-color: #b30000;
+    /* Input alanı hatalı olduğunda odaklandığında kenarlık rengini #b30000 olarak belirliyoruz */
+    box-shadow: 0 0 5px #b30000;
+}
+
+.input-warning {
+    border-color: #ffcc00;
+    /* Input alanının uyarı olduğunda kenarlık rengini #ffcc00 olarak belirliyoruz */
+    box-shadow: 0 0 1px #ffcc00;
+}
+
+.input-warning:focus {
+    border-color: #cc9900;
+    /* Input alanı uyarı olduğunda odaklandığında kenarlık rengini #cc9900 olarak belirliyoruz */
+    box-shadow: 0 0 5px #cc9900;
+}
+
+.input-info {
+    border-color: #0087E4;
+    /* Input alanının bilgi olduğunda kenarlık rengini #0087E4 olarak belirliyoruz */
+    box-shadow: 0 0 1px #0087E4;
+}
+
+.input-info:focus {
+    border-color: #0056b3;
+    /* Input alanı bilgi olduğunda odaklandığında kenarlık rengini #0056b3 olarak belirliyoruz */
+    box-shadow: 0 0 5px #0056b3;
+}
+
+.input-large {
+    font-size: 1.5em;
+    /* Input alanının yazı boyutunu 1.5em olarak belirliyoruz */
+    padding: 0.75em;
+    /* Input alanının iç boşluklarını 0.75em olarak belirliyoruz */
+}
+
+.input-large:hover {
+    font-size: 1.75em;
+    /* Input alanı üzerine gelindiğinde yazı boyutunu 1.75em olarak belirliyoruz */
+    padding: 1em;
+    /* Input alanı üzerine gelindiğinde iç boşluklarını 1em olarak belirliyoruz */
+}
+
+
+.input-small {
+    font-size: 0.75em;
+    /* Input alanının yazı boyutunu 0.75em olarak belirliyoruz */
+    padding: 0.25em;
+    /* Input alanının iç boşluklarını 0.25em olarak belirliyoruz */
+}
+
+.input-small:hover {
+    font-size: 0.85em;
+    /* Input alanı üzerine gelindiğinde yazı boyutunu 0.85em olarak belirliyoruz */
+    padding: 0.5em;
+    /* Input alanı üzerine gelindiğinde iç boşluklarını 0.5em olarak belirliyoruz */
+}
+
+
+ 
+.input:disabled {
+    background-color: #862c2c;
+    /* Input alanının devre dışı olduğunda arka plan rengini #f1f1f1 olarak belirliyoruz */
+    border-color: #ccc;
+    /* Input alanının devre dışı olduğunda kenarlık rengini #ccc olarak belirliyoruz */
+    color: #666;
+    /* Input alanının devre dışı olduğunda yazı rengini #666 olarak belirliyoruz */
+}
