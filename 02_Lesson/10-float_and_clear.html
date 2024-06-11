@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+
+    <style>
+        /* Genel Stil Ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            /* Yazı tipi ailesi Arial ve yedek sans-serif */
+            line-height: 1.6;
+            /* Satır yüksekliği 1.6 kat */
+            margin: 20px;
+            /* Tüm kenarlarda 20 piksel dış boşluk */
+        }
+
+        h1,
+        h2 {
+            border-bottom: 2px solid #ccc;
+            /* Alt kenarda 2 piksel kalınlığında gri çizgi */
+            padding-bottom: 10px;
+            /* Alt iç boşluk 10 piksel */
+        }
+
+        section {
+            margin-bottom: 40px;
+            /* Alt kenarda 40 piksel dış boşluk */
+        }
+
+        /* Inline Element */
+        .inline-element {
+            display: inline;
+            /* Öğeyi satır içi (inline) yapar */
+            background-color: #e0f7fa;
+            /* Arka plan rengi açık mavi */
+            padding: 5px;
+            /* Tüm kenarlarda 5 piksel iç boşluk */
+            margin: 5px;
+            /* Tüm kenarlarda 5 piksel dış boşluk */
+        }
+
+        /* Block Element */
+        .block-element {
+            display: block;
+            /* Öğeyi blok öğesi yapar */
+            background-color: #ffe0b2;
+            /* Arka plan rengi açık turuncu */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+            margin: 10px 0;
+            /* Üst ve alt kenarlarda 10 piksel dış boşluk */
+        }
+
+        /* Inline-Block Element */
+        .inline-block-element {
+            display: inline-block;
+            /* Öğeyi inline-block yapar */
+            background-color: #d1c4e9;
+            /* Arka plan rengi açık mor */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+            margin: 5px;
+            /* Tüm kenarlarda 5 piksel dış boşluk */
+            width: 150px;
+            /* Genişlik 150 piksel */
+            text-align: center;
+            /* Metin ortalanmış */
+        }
+
+        /* Flex Container */
+        .flex-container {
+            display: flex;
+            /* Öğeyi esnek konteyner (flex container) yapar */
+            gap: 10px;
+            /* Esnek öğeler arasında 10 piksel boşluk */
+            background-color: #c8e6c9;
+            /* Arka plan rengi açık yeşil */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+        }
+
+        .flex-item {
+            background-color: #81c784;
+            /* Arka plan rengi yeşil */
+            padding: 20px;
+            /* Tüm kenarlarda 20 piksel iç boşluk */
+            margin: 5px;
+            /* Tüm kenarlarda 5 piksel dış boşluk */
+            flex: 1;
+            /* Esnek öğenin genişlemesini sağlar */
+            text-align: center;
+            /* Metin ortalanmış */
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            /* Öğeyi ızgara konteyner (grid container) yapar */
+            grid-template-columns: repeat(2, 1fr);
+            /* Her satırda 2 sütun, her biri eşit genişlikte */
+            gap: 10px;
+            /* Izgara öğeleri arasında 10 piksel boşluk */
+            background-color: #bbdefb;
+            /* Arka plan rengi açık mavi */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+        }
+
+        .grid-item {
+            background-color: #90caf9;
+            /* Arka plan rengi mavi */
+            padding: 20px;
+            /* Tüm kenarlarda 20 piksel iç boşluk */
+            text-align: center;
+            /* Metin ortalanmış */
+        }
+
+        /* None Element */
+        .none-element {
+            display: none;
+            /* Öğeyi gizler, sayfa düzeninden tamamen kaldırır */
+        }
+
+        /* Float Left */
+        .float-left {
+            float: left;
+            /* Öğeyi sola yaslar */
+            width: 45%;
+            /* Genişlik 45% */
+            background-color: #e0f7fa;
+            /* Arka plan rengi açık mavi */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+            margin: 10px;
+            /* Tüm kenarlarda 10 piksel dış boşluk */
+        }
+
+        /* Float Right */
+        .float-right {
+            float: right;
+            /* Öğeyi sağa yaslar */
+            width: 45%;
+            /* Genişlik 45% */
+            background-color: #ffe0b2;
+            /* Arka plan rengi açık turuncu */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+            margin: 10px;
+            /* Tüm kenarlarda 10 piksel dış boşluk */
+        }
+
+        /* Clear Both */
+        .clear-both {
+            clear: both;
+            /* Hem sola hem sağa yaslanmış öğelerin etkisini kaldırır */
+            background-color: #d1c4e9;
+            /* Arka plan rengi açık mor */
+            padding: 10px;
+            /* Tüm kenarlarda 10 piksel iç boşluk */
+            margin: 10px 0;
+            /* Üst ve alt kenarlarda 10 piksel dış boşluk */
+            text-align: center;
+            /* Metin ortalanmış */
+        }
+
+        .image1 {
+            /* Türkçe açıklamsını yazınız. */
+            float: left;
+            /* Resim sola yaslanır. */
+            margin-right: 10px;
+            /* Resim ile metin arasında 10px boşluk bırakır. */
+        }
+
+        .image2 {
+            float: right;
+            /* Resim sağa yaslanır. */
+            margin-left: 10px;
+            /* Resim ile metin arasında 10px boşluk bırakır. */
+        }
+
+        p {
+            clear: both;
+            /* Float özelliği olan elemanların etkisini kaldırır. */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display ve Float Özellikleri Örnekleri</h1>
+
+    <section>
+        <h2>Display Özellikleri</h2>
+        <p>
+            <strong>CSS'de display özelliği, bir HTML öğesinin nasıl görüntüleneceğini belirler.</strong>
+            Bu özellik, bir öğenin içeriğinin ve diğer öğelerle olan etkileşiminin nasıl olacağını tanımlar.
+            display özelliğinin en yaygın kullanılan değerleri arasında inline, block, ve inline-block bulunur.
+            İşte bu değerlerin ve diğer bazı yaygın display değerlerinin açıklamaları:
+        </p>
+        <ul>
+            <li><strong>display: inline</strong>: Bir öğeyi satır içi (inline) öğesi yapar. Inline öğeler, bir satırda yan yana dizilirler ve sadece içeriklerinin genişliği kadar yer kaplarlar. Kenar
+                boşlukları (margin) ve iç boşlukları (padding) yalnızca yatay yönlerde çalışır. Örnek: &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;</li>
+            <li><strong>display: block</strong>: Bir öğeyi blok öğesi yapar. Block öğeler, her zaman yeni bir satırda başlarlar ve tüm satırı kaplarlar. Genişlik ve yükseklik ayarları yapılabilir.
+                Kenar boşlukları (margin) ve iç boşlukları (padding) her iki yönde de çalışır. Örnek: &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;</li>
+            <li><strong>display: inline-block</strong>: Inline-block öğeler, inline öğeler gibi satır içi yerleştirilir, ancak block öğeler gibi genişlik ve yükseklik ayarları yapılabilir. Kenar
+                boşlukları (margin) ve iç boşlukları (padding) hem yatay hem de dikey yönlerde çalışır. Örnek: &lt;img&gt;, &lt;button&gt;</li>
+            <li><strong>display: flex</strong>: Bir öğeyi esnek konteyner (flex container) yapar ve içerdiği öğeleri esnek öğeler (flex items) olarak düzenler. Esnek düzen, öğelerin düzenlenmesini ve
+                hizalanmasını kolaylaştırır.</li>
+            <li><strong>display: grid</strong>: Bir öğeyi ızgara konteyner (grid container) yapar ve içerdiği öğeleri ızgara öğeleri (grid items) olarak düzenler. Izgara düzeni, iki boyutlu (satır ve
+                sütun) yerleşim sağlar.</li>
+            <li><strong>display: none</strong>: Bir öğeyi gizler. Öğenin yerini bile almaz, tamamen sayfadan kaldırılmış gibi davranır. Görünmez olduğu için sayfa düzenine etki etmez.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Inline</h2>
+        <span class="inline-element">Bu bir inline (satır içi) öğedir.</span>
+        <span class="inline-element">Metin ile birlikte akar.</span>
+    </section>
+
+    <section>
+        <h2>Block</h2>
+        <div class="block-element">Bu bir block (blok) öğedir.</div>
+        <div class="block-element">Tam genişliği kaplar.</div>
+    </section>
+
+    <section>
+        <h2>Inline-Block</h2>
+        <div class="inline-block-element">Bu bir inline-block öğedir.</div>
+        <div class="inline-block-element">Metin ile birlikte akar, ancak genişlik ve yükseklik alabilir.</div>
+    </section>
+
+    <section>
+        <h2>Flex</h2>
+        <div class="flex-container">
+            <div class="flex-item">Flex Öğesi 1</div>
+            <div class="flex-item">Flex Öğesi 2</div>
+            <div class="flex-item">Flex Öğesi 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">Grid Öğesi 1</div>
+            <div class="grid-item">Grid Öğesi 2</div>
+            <div class="grid-item">Grid Öğesi 3</div>
+            <div class="grid-item">Grid Öğesi 4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>None</h2>
+        <div class="none-element">Bu öğe gizlenmiş ve görüntülenmemelidir.</div>
+    </section>
+    <section>
+        <h2>Float ve Clear Özellikleri</h2>
+        <p>
+            <strong>Float Özelliği</strong>: `float` özelliği, bir öğeyi sola veya sağa yaslayarak çevresindeki öğelerin akışını düzenler. Bu özellik genellikle metin etrafında resim veya diğer blok
+            öğeleri yerleştirmek için kullanılır.
+        <ul>
+            <li>`float: left;` öğeyi sola yaslar.</li>
+            <li>`float: right;` öğeyi sağa yaslar.</li>
+            <li>`float: none;` (varsayılan) öğeyi normal akışta tutar.</li>
+        </ul>
+        </p>
+        <p>
+            <strong>Clear Özelliği</strong>: `clear` özelliği, `float` özelliği kullanılan öğelerin altında yer alan öğelerin float etkisinden kurtulmasını sağlar. Bu özellik, öğelerin `float` öğeleri
+            yanında hizalanmasını engeller.
+        <ul>
+            <li>`clear: left;` sola yaslanmış (float: left) öğelerin etkisini kaldırır.</li>
+            <li>`clear: right;` sağa yaslanmış (float: right) öğelerin etkisini kaldırır.</li>
+            <li>`clear: both;` hem sola hem sağa yaslanmış öğelerin etkisini kaldırır.</li>
+            <li>`clear: none;` (varsayılan) float etkisini kaldırmaz.</li>
+        </ul>
+        </p>
+    </section>
+
+    <section>
+        <h2>Float</h2>
+        <div class="float-left">Bu öğe sola yaslanmış (float: left).</div>
+        <div class="float-right">Bu öğe sağa yaslanmış (float: right).</div>
+        <p>Bu paragraflar, float öğelerinin yanında akacaktır. Bu özellik, metin etrafına resim yerleştirmek için kullanışlıdır.</p>
+    </section>
+
+    <section>
+        <h2>Clear</h2>
+        <p>Bu paragraf float öğelerinin etkisinde kalır.</p>
+        <div class="clear-both">Bu öğe, float etkisini kaldırmak için clear: both kullanır.</div>
+        <p>Bu paragraf, clear özelliği kullanılarak float etkisinden kurtulmuş öğenin altında yer alır.</p>
+    </section>
+
+    <hr/>
+    <hr/>
+
+    <img src="https://picsum.photos/id/17/100/200" alt="" class="image1">
+    <img src="https://picsum.photos/id/16/100/100" alt="" class="image2">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat, nam maxime! Optio consectetur consequuntur, distinctio autem esse, alias at et sapiente voluptatem dignissimos facere. Fuga
+        consequuntur laborum illo ducimus, iste neque libero recusandae nisi totam ipsam consectetur iusto eveniet nemo ex facilis. Est facere, nisi similique quibusdam ratione veniam quaerat non quos
+        animi error illo praesentium, culpa vel omnis minima fugiat amet nemo dignissimos voluptates dolorum sit reprehenderit. Error sunt rerum sit et eius qui nisi veritatis pariatur, voluptates
+        doloribus cumque inventore, distinctio doloremque itaque ullam ad aspernatur quaerat repellat expedita ipsa. Laborum quia tenetur doloremque. Optio sunt blanditiis maiores.
+    </p>
+
+</body>
+
+</html>
