@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+        .container {
+            background-color: lightcyan; /* Container'ın arka plan rengi */
+            height: 600px; /* Container'ın yüksekliği */
+            border: 1px solid black; /* Container'ın kenarlık rengi ve kalınlığı */
+            display: flex; /* Container'ı flex container olarak tanımlar */
+            flex-direction: row; /* Öğelerin yerleşim yönünü tanımlar */
+            justify-content: space-evenly; /* Öğeleri yatayda hizalar */
+            align-items: stretch; /* Öğelerin yüksekliklerini eşitler */
+            flex-wrap: wrap; /* Öğeleri sardırır */
+            align-content: space-evenly; /* Öğeleri dikeyde hizalar */
+        }
+
+        .container2 {
+            background-color: lightcyan; /* Container'ın arka plan rengi */
+            height: 500px; /* Container'ın yüksekliği */
+            border: 1px solid black; /* Container'ın kenarlık rengi ve kalınlığı */
+            display: flex; /* Container'ı flex container olarak tanımlar */
+            flex-direction: coulmn; /* Öğelerin yerleşim yönünü tanımlar */
+            justify-content: space-evenly; /* Öğeleri yatayda hizalar */
+            align-items: stretch; /* Öğelerin yüksekliklerini eşitler */
+        }
+
+ 
+
+        .item {
+            min-width: 200px; /* Öğelerin minimum genişliği */
+            min-height: 100px; /* Öğelerin minimum yüksekliği */
+            background-color: orange; /* Öğelerin arka plan rengi */
+            border: 1px solid black; /* Öğelerin kenarlık rengi ve kalınlığı */
+            margin: 10px; /* Öğelerin dış boşluğu */
+        }
+
+        .item1 {
+            /* height: 120px; */
+            flex-grow: 0; /* Öğenin büyüme oranı */
+        }
+
+        .item2 {
+             /* height: 150px; */
+            flex-grow: 1;
+            flex-basis: 0; /* Öğenin başlangıç genişliği */
+        }
+
+        .item3 {
+            /* height: 180px; */
+            flex-grow: 2;
+            flex-basis: 0;
+        }
+
+        .item4 {
+            /* height: 200px; */
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+    <br>
+ 
+</body>
+
+</html>

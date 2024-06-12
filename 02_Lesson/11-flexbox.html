@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .example {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: flex;
+            border: 2px solid black;
+            margin-top: 10px;
+        }
+
+        .item {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid navy;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flexbox Nedir?</h1>
+    <p>Flexbox, CSS3'ün esnek kutu düzeni modelidir ve karmaşık düzenleri kolayca tasarlamanıza olanak tanır. Flexbox ile ögeleri hizalamak ve yerleştirmek çok daha kolay ve esnektir.</p>
+
+    <h1>Flexbox Tanımları ve Örnekleri</h1>
+
+    <h2>Flex Container Özellikleri</h2>
+    <div class="example">
+        <h3>display</h3>
+        <p><code>display: flex;</code> veya <code>display: inline-flex;</code> container'ı flex container olarak tanımlar.</p>
+    </div>
+    <div class="example">
+        <h3>flex-direction</h3>
+        <p>Öğelerin yerleşim yönünü tanımlar:</p>
+        <ul>
+            <li><code>row</code> (varsayılan)</li>
+            <li><code>row-reverse</code></li>
+            <li><code>column</code></li>
+            <li><code>column-reverse</code></li>
+        </ul>
+        <div class="container" style="flex-direction: row;">
+            <div class="item">Öğe 1</div>
+            <div class="item">Öğe 2</div>
+            <div class="item">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>flex-wrap</h3>
+        <p>Öğelerin birden fazla satıra sarılıp sarılmayacağını tanımlar:</p>
+        <ul>
+            <li><code>nowrap</code> (varsayılan)</li>
+            <li><code>wrap</code></li>
+            <li><code>wrap-reverse</code></li>
+        </ul>
+        <div class="container" style="flex-wrap: wrap;">
+            <div class="item" style="flex-basis: 200px;">Öğe 1</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 2</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 3</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 4</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>justify-content</h3>
+        <p>Öğelerin ana eksen boyunca hizalanmasını tanımlar:</p>
+        <ul>
+            <li><code>flex-start</code> (varsayılan)</li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+            <li><code>space-around</code></li>
+        </ul>
+        <div class="container" style="justify-content: space-between;">
+            <div class="item">Öğe 1</div>
+            <div class="item">Öğe 2</div>
+            <div class="item">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>align-items</h3>
+        <p>Öğelerin çapraz eksen boyunca hizalanmasını tanımlar:</p>
+        <ul>
+            <li><code>stretch</code> (varsayılan)</li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>baseline</code></li>
+        </ul>
+        <div class="container" style="align-items: center; height: 200px;">
+            <div class="item">Öğe 1</div>
+            <div class="item">Öğe 2</div>
+            <div class="item">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>align-content</h3>
+        <p>Çapraz eksen boyunca birden fazla satırın hizalanmasını tanımlar:</p>
+        <ul>
+            <li><code>stretch</code> (varsayılan)</li>
+            <li><code>flex-start</code></li>
+            <li><code>flex-end</code></li>
+            <li><code>center</code></li>
+            <li><code>space-between</code></li>
+            <li><code>space-around</code></li>
+        </ul>
+        <div class="container" style="flex-wrap: wrap; align-content: space-around; height: 400px;">
+            <div class="item" style="flex-basis: 200px;">Öğe 1</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 2</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 3</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 4</div>
+        </div>
+    </div>
+
+    <h2>Flex Item Özellikleri</h2>
+    <div class="example">
+        <h3>order</h3>
+        <p>Flex öğelerin container içindeki sırasını tanımlar:</p>
+        <div class="container">
+            <div class="item" style="order: 2;">Öğe 1</div>
+            <div class="item" style="order: 1;">Öğe 2</div>
+            <div class="item" style="order: 3;">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>flex-grow</h3>
+        <p>Flex öğenin gerektiğinde büyüme yeteneğini tanımlar:</p>
+        <div class="container">
+            <div class="item" style="flex-grow: 1;">Öğe 1</div>
+            <div class="item" style="flex-grow: 2;">Öğe 2</div>
+            <div class="item" style="flex-grow: 1;">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>flex-shrink</h3>
+        <p>Flex öğenin gerektiğinde küçülme yeteneğini tanımlar:</p>
+        <div class="container">
+            <div class="item" style="flex-shrink: 1;">Öğe 1</div>
+            <div class="item" style="flex-shrink: 2;">Öğe 2</div>
+            <div class="item" style="flex-shrink: 1;">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>flex-basis</h3>
+        <p>Kalan alan dağıtılmadan önce öğenin varsayılan boyutunu tanımlar:</p>
+        <div class="container">
+            <div class="item" style="flex-basis: 100px;">Öğe 1</div>
+            <div class="item" style="flex-basis: 200px;">Öğe 2</div>
+            <div class="item" style="flex-basis: 150px;">Öğe 3</div>
+        </div>
+    </div>
+    <div class="example">
+        <h3>align-self</h3>
+        <p>Bireysel flex öğe için varsayılan hizalamayı (veya <code>align-items</code> tarafından belirtileni) geçersiz kılar:</p>
+        <div class="container" style="height: 200px; align-items: flex-start;">
+            <div class="item" style="align-self: center;">Öğe 1</div>
+            <div class="item" style="align-self: flex-end;">Öğe 2</div>
+            <div class="item" style="align-self: flex-start;">Öğe 3</div>
+        </div>
+    </div>
+</body>
+
+</html>
