@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* Dış boşlukları sıfırlar */
+    padding: 0;
+    /* İç boşlukları sıfırlar */
+    font-family: 'Arial', sans-serif;
+    /* Yazı tipi belirler */
+    font-size: 20px;
+    /* Yazı boyutunu belirler */
+}
+
+.nav {
+    background-color: #333;
+    /* Menü arkaplan rengi */
+    color: #fff;
+    /* Menü yazı rengi */
+    padding: 0 .5rem;
+    /* Menü iç boşluğu */
+    display: flex;
+    /* Menü elemanlarını yan yana sıralar */
+    align-items: center;
+    /* Menü elemanlarını dikeyde hizalar */
+    justify-content: space-between;
+    /* Menü elemanlarını yatayda hizalar */
+}
+
+.menu {
+    margin: 0;
+    /* Menü elemanları arasındaki boşluğu sıfırlar */
+    list-style: none;
+    /* Menü elemanlarının noktalarını kaldırır */
+    display: flex;
+    /* Menü elemanlarını yan yana sıralar */
+}
+
+.link {
+    padding: .5rem;
+    /* Menü elemanları iç boşluğu */
+}
+
+.link:hover {
+    background-color: #555;
+    /* Menü elemanı üzerine gelindiğinde arkaplan rengi */
+}
+
+.link a {
+    color: inherit;
+    /* Menü elemanı yazı rengi */
+    text-decoration: none;
+    /* Menü elemanı alt çizgisini kaldırır */
+}
